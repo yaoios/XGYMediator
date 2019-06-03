@@ -15,6 +15,8 @@
 		1D6B918622A521AA006456DC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D6B918522A521AA006456DC /* main.m */; };
 		1D6B919022A521AA006456DC /* XGYMediatorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D6B918F22A521AA006456DC /* XGYMediatorTests.m */; };
 		1D6B919B22A521AA006456DC /* XGYMediatorUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D6B919A22A521AA006456DC /* XGYMediatorUITests.m */; };
+		1D6B91AE22A5284A006456DC /* XGYMediator.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D6B91AD22A5284A006456DC /* XGYMediator.m */; };
+		45DE4F223043EEAEA673E904 /* libPods-XGYMediator.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ED2E08719BDA8893DB63253A /* libPods-XGYMediator.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,11 @@
 		1D6B919622A521AA006456DC /* XGYMediatorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = XGYMediatorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1D6B919A22A521AA006456DC /* XGYMediatorUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XGYMediatorUITests.m; sourceTree = "<group>"; };
 		1D6B919C22A521AA006456DC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1D6B91AC22A52844006456DC /* XGYMediator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XGYMediator.h; sourceTree = "<group>"; };
+		1D6B91AD22A5284A006456DC /* XGYMediator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XGYMediator.m; sourceTree = "<group>"; };
+		4474B17C339D1813B8AB8C40 /* Pods-XGYMediator.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XGYMediator.debug.xcconfig"; path = "Target Support Files/Pods-XGYMediator/Pods-XGYMediator.debug.xcconfig"; sourceTree = "<group>"; };
+		6878FA781FFE79E8A403D72F /* Pods-XGYMediator.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XGYMediator.release.xcconfig"; path = "Target Support Files/Pods-XGYMediator/Pods-XGYMediator.release.xcconfig"; sourceTree = "<group>"; };
+		ED2E08719BDA8893DB63253A /* libPods-XGYMediator.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-XGYMediator.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +65,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				45DE4F223043EEAEA673E904 /* libPods-XGYMediator.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +93,8 @@
 				1D6B918E22A521AA006456DC /* XGYMediatorTests */,
 				1D6B919922A521AA006456DC /* XGYMediatorUITests */,
 				1D6B917422A521A9006456DC /* Products */,
+				1EC044881921524669212AF6 /* Pods */,
+				8107B3E3F3C52B8F843EDEFD /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,6 +111,7 @@
 		1D6B917522A521A9006456DC /* XGYMediator */ = {
 			isa = PBXGroup;
 			children = (
+				1D6B91AB22A5282E006456DC /* XGYMediator */,
 				1D6B917622A521A9006456DC /* AppDelegate.h */,
 				1D6B917722A521A9006456DC /* AppDelegate.m */,
 				1D6B917922A521A9006456DC /* ViewController.h */,
@@ -132,6 +143,32 @@
 			path = XGYMediatorUITests;
 			sourceTree = "<group>";
 		};
+		1D6B91AB22A5282E006456DC /* XGYMediator */ = {
+			isa = PBXGroup;
+			children = (
+				1D6B91AC22A52844006456DC /* XGYMediator.h */,
+				1D6B91AD22A5284A006456DC /* XGYMediator.m */,
+			);
+			path = XGYMediator;
+			sourceTree = "<group>";
+		};
+		1EC044881921524669212AF6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4474B17C339D1813B8AB8C40 /* Pods-XGYMediator.debug.xcconfig */,
+				6878FA781FFE79E8A403D72F /* Pods-XGYMediator.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		8107B3E3F3C52B8F843EDEFD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				ED2E08719BDA8893DB63253A /* libPods-XGYMediator.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -139,6 +176,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1D6B919F22A521AA006456DC /* Build configuration list for PBXNativeTarget "XGYMediator" */;
 			buildPhases = (
+				EDC7757307C4DCE470D013B2 /* [CP] Check Pods Manifest.lock */,
 				1D6B916F22A521A9006456DC /* Sources */,
 				1D6B917022A521A9006456DC /* Frameworks */,
 				1D6B917122A521A9006456DC /* Resources */,
@@ -257,12 +295,38 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		EDC7757307C4DCE470D013B2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-XGYMediator-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		1D6B916F22A521A9006456DC /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				1D6B917B22A521A9006456DC /* ViewController.m in Sources */,
+				1D6B91AE22A5284A006456DC /* XGYMediator.m in Sources */,
 				1D6B918622A521AA006456DC /* main.m in Sources */,
 				1D6B917822A521A9006456DC /* AppDelegate.m in Sources */,
 			);
@@ -433,6 +497,7 @@
 		};
 		1D6B91A022A521AA006456DC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4474B17C339D1813B8AB8C40 /* Pods-XGYMediator.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -449,6 +514,7 @@
 		};
 		1D6B91A122A521AA006456DC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6878FA781FFE79E8A403D72F /* Pods-XGYMediator.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
